@@ -5,15 +5,32 @@ import QtQuick.Dialogs 1.0
 
 ApplicationWindow {
     visible: true
-    title: "QML Test for Go"
+    title: "QML Bing Wallpaper"
 
-    width: 420
-    height: 640
-    minimumHeight: 420
-    minimumWidth: 640
-    maximumHeight: 420
-    maximumWidth: 640
+    height: 600
+    width: 1024
+    minimumHeight: 600
+    minimumWidth: 1024
 
-    RowLayout {
+    //opacity: 0.9
+
+    Image {
+        source: imgURL
     }
+
+    Rectangle {
+        height: 50
+        width: parent.width
+        y: parent.height - height
+        color: "#AA000000"
+        Text{
+            text: descText
+            font.family: "思源黑体", "Arial"
+            font.pointSize: 24
+            color: "white"
+            anchors.centerIn: parent
+        }
+    }
+    property string imgURL
+    property string descText
 }
