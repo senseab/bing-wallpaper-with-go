@@ -7,10 +7,12 @@ ApplicationWindow {
     visible: true
     title: "QML Bing Wallpaper"
 
-    height: 600
+    height: 576
     width: 1024
-    minimumHeight: 600
+    minimumHeight: 576
     minimumWidth: 1024
+    maximumHeight: 576
+    maximumWidth: 1024
 
     //opacity: 0.9
 
