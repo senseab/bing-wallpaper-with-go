@@ -16,6 +16,11 @@ ApplicationWindow {
 
     Image {
         source: imgURL
+        smooth: true
+        fillMode: Image.PreserveAspectFit
+        height: parent.height
+        width: parent.width
+        anchors.centerIn: parent
     }
 
     Rectangle {
