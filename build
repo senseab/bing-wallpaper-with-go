@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export GOPATH=`pwd`
+go get gopkg.in/qml.v1
+go build qmltest
