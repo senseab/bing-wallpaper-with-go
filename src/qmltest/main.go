@@ -44,6 +44,7 @@ func run() error {
 	win.Set("imgURL", BASE+url)
 	win.Set("x", 200)
 	win.Set("y", 200)
+    win.On("buttonC", func(){os.Exit(0)})
 	win.Wait()
 	return nil
 }

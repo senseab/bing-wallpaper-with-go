@@ -37,7 +37,16 @@ ApplicationWindow {
             color: "white"
             anchors.centerIn: parent
         }
+        Button{
+            visible: false
+            text: "fresh"
+            onClicked:{
+                buttonC();
+            }
+            
+        }
     }
     property string imgURL
     property string descText
+    signal buttonC
 }
